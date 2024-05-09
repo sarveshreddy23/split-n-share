@@ -1,38 +1,93 @@
+
+#root {
+  display: flex;
+justify-content: center;
+}
+
+
 .App {
   text-align: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1em;
+  width: 80vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-side{
+  grid-column: 1;
+  border: 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.right-side{
+  grid-column: 2;
+  border: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Red {
+  color: red;
+}
+
+.Green {
+  color: green;
+}
+
+
+.Button {
+  background-color: orange;
+}
+
+.friens-section{
+  width: 100%;
+  background-color: yellow;
+}
+
+.profileImage {
+  width:2em;
+  height:2em;
+  line-height:2em;
+  content:attr(data-letters);
+  text-transform: uppercase;
+  border-radius: 50%;
+  background: gray;
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  vertical-align:middle;
+}
+
+.add-friend-section{
+  width: 100%;
+  background-color: yellow;
+  transition: all 1s ease;
+}
+
+
+.text-box {
+  height: 45px;
+  border: none;
+  outline: 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  font-size: 1.5rem;  
+}
+
+.disabled-text-box {
+  height: 45px;
+  outline: 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  font-size: 1.5rem;  
 }
